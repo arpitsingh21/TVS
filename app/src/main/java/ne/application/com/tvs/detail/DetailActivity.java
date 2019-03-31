@@ -80,7 +80,8 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     private void createMapView(String account) {
-        Glide.with(this).load("https://maps.googleapis.com/maps/api/staticmap?center="+getIntent().getStringExtra("place")+",+NY&zoom=13&scale=1&size=600x300&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyAFKD2l2cUeEIy6-lpjlYuDYQ95Cp32uLw").into(mMapView);
+       // Glide.with(this).load("https://maps.googleapis.com/maps/api/staticmap?center="+getIntent().getStringExtra("place")+",+NY&zoom=13&scale=1&size=600x300&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyAFKD2l2cUeEIy6-lpjlYuDYQ95Cp32uLw").into(mMapView);
+        Glide.with(this).load("https://www.mapquestapi.com/staticmap/v5/map?key=MesSUq2gCsCWt5AdMnfMlDdstL3QUAdw&center="+getIntent().getStringExtra("place")).into(mMapView);
     }
 
     @OnClick(R.id.addImage)
